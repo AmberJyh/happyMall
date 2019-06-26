@@ -6,8 +6,14 @@ module.exports = {
   entry: './src/app.jsx',
   output: {
     path: path.resolve(__dirname, 'dist'),
+    publicPath:'/dist/',   
     filename: 'js/app.js'
   },
+  //
+  devServer: {
+    // contentBase: './dist'
+    port:8086
+    },
   plugins: [
     //处理html文件
       new HtmlWebpackPlugin({
@@ -75,10 +81,9 @@ module.exports = {
                       }
                     }
                   ]
-                 }
+                 },
+
         ]
       },
-      devServer: {
-           contentBase: './dist'
-           },
+      
 };
