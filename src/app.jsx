@@ -1,8 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
 import "./index.css"
 import "./index.scss"
 import "../node_modules/font-awesome/css/font-awesome.min.css"
+import {Component} from React.Component
 
 // ReactDOM.render(
 //     <div>
@@ -11,8 +12,12 @@ import "../node_modules/font-awesome/css/font-awesome.min.css"
 //     </div>,
 //     document.getElementById('app'),
 // );
+let style={
+    // color:'aqua',
+    // fontSize:"30px"
+}
+let jsx=<div className="jsx" style={style}>jsx...</div>
 
-let jsx=<div>jsx...</div>
 ReactDOM.render(
     jsx,
     document.getElementById('app')
