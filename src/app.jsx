@@ -17,18 +17,19 @@ let style={
     // fontSize:"30px"
 }
 let jsx=<div className="jsx" style={style}>jsx...</div>
-class Component extends Component{
+class Age extends Component{
     constructor(){
         super();
-        state:({
+        this.state={
             name:"Amber",
             age:0
-        })
+        }
     }
 
-    handleClick=()=>{
+    handleClick(){
+      
         this.setState({
-            name:this.state.name+1
+            age:this.state.age+1
         })
     }
     render(){
@@ -36,12 +37,12 @@ class Component extends Component{
             <div>
                 <p>I am {this.state.name}</p>
                 <p>I am {this.state.age} years old!</p>
-                <button onClick={this.handleClick}>Add</button>
+                <button onClick={(e)=>{this.handleClick(e)}}>Add</button>
             </div>
         )
     }
 }
 ReactDOM.render(
-    <Component/>,
+    <Age></Age>,
     document.getElementById('app')
 )
