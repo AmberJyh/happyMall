@@ -9,10 +9,20 @@ module.exports = {
     publicPath:'/dist/',   
     filename: 'js/app.js'
   },
+  //引用别名，以防路径更改导致的引用不正确
+  resolve:{
+    alias:{
+      page     : path.resolve(__dirname, 'src/page'),
+      component: path.resolve(__dirname, 'src/component'),
+    }
+  },
   //
   devServer: {
     // contentBase: './dist'
-    port:8086
+    port:8086,
+    historyApiFallback:{
+      index:'./dist/index.html'
+     },
     },
   plugins: [
     //处理html文件
