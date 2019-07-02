@@ -10,17 +10,18 @@ http://creativecommons.org/licenses/by/3.0/
 ------------------------------------------------*/
 body {
 	font-family: 'Open Sans', sans-serif;
+	background: #f3f3f3;
 }
 
 #wrapper {
 	width: 100%;
-	background: #2b2e33;
+	
 }
 
 #page-wrapper {
 	padding: 15px 15px;
-	min-height: 600px;
-	background: #f3f3f3;
+	
+	
 }
 
 #page-inner {
@@ -28,16 +29,14 @@ body {
 	margin: 10px 20px 10px 0px;
 	background-color: transparent;
 	padding: 10px;
-	min-height: 1200px;
+	
 }
 
 .text-center {
 	text-align: center;
 }
 
-.no-boder {
-	border: 1px solid #f3f3f3;
-}
+
 
 h1, .h1, h2, .h2, h3, .h3 {
 	margin-top: 7px;
@@ -179,7 +178,7 @@ p {
 }
 
 .noti-box {
-	min-height: 100px;
+	
 	padding: 20px;
 }
 
@@ -595,11 +594,17 @@ ul.nav.nav-second-level.collapse.in {
     MEDIA QUERIES     
 ------------------------------------------------*/
  
-@media(min-width:768px) {
+@media(max-width:768px) {
+	.top-navbar{
+		position: relative;
+	}
+	.top-navbar .navbar-brand{
+		width:100%;
+	}
 	#page-wrapper {
 		margin: 0 0 0 260px;
 		padding: 15px 30px;
-		min-height: 1200px;
+	
 	}
 
 	.navbar-side {
@@ -612,11 +617,4 @@ ul.nav.nav-second-level.collapse.in {
 	}
 }
 
-@media(max-width:480px) {
-	.page-header small {
-		display: block;
-		padding-top: 14px;
-		font-size: 19px;
-	}
-}
 
