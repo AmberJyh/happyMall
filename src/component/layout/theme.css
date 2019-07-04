@@ -437,7 +437,9 @@ footer p {
 	border-radius: 0 0 4px 4px;
 	top:96%;
 }
-
+.dropdown-menu > li > a{
+	cursor: pointer;
+}
 .top-navbar .dropdown-menu > li > a:hover, .top-navbar .dropdown-menu > li > a:focus {
 	color: #225081;
 	background: none;
