@@ -6,7 +6,7 @@ class PageTitle extends Component{
         super(props)
     }
     componentWillMount(){
-        document.title=this.props.title
+        document.title=this.props.title+'-NetSdl'
     }
    render(){
        return(
